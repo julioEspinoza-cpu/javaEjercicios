@@ -10,7 +10,7 @@ public class Main {
         int[] historial = new int[6];
 
         Scanner teclado = new Scanner(System.in);
-        for (int i = 0; i <= 5; i++) {
+        for (int i = 0; i < 5; i++) {
             System.out.println("----- Ingrese  un  Numero  entre  0 y 10 ,tenes 5 chances para adivinar   --------");
 
             numeroDelJugador = teclado.nextInt();
@@ -30,7 +30,7 @@ public class Main {
 
             }
             ;
-            if (i == 5) {
+            if (i == 4) {
                 System.out.println("Tus Chances se Terminaron ");
 
             }
