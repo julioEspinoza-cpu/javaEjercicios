@@ -37,6 +37,7 @@ public class Main {
             }
 
         }
+        teclado.close();
         System.out.println("Los numero del  historial son : " + Arrays.toString(historial));
     }
 }
