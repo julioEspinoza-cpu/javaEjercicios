@@ -1,9 +1,9 @@
 package collection;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
-public class ArrayLists {
+public class LinkedLists {
 
     public static class persona {
         private int id;
@@ -43,19 +43,19 @@ public class ArrayLists {
 
     public static void main(String[] args) {
 
-        List<persona> lista = new ArrayList<>();
+        List<persona> lista = new LinkedList<>();
+        // agregar personas al Final De la lista
 
-        lista.add(new persona(1, "julio", 35));
-        lista.add(new persona(2, "ener", 18));
-        lista.add(new persona(0, "fredY", 36));
-        lista.add(new persona(3, "carlo", 40));
-        lista.add(new persona(4, "fred", 36));
+        lista.add(new persona(1, "julioooo", 35));
+        lista.add(new persona(2, "enero", 18));
+        lista.add(new persona(3, "carlos", 40));
+        lista.add(new persona(4, "fredY", 36));
 
-        // por indice
-        System.out.println("--------------------for-----------------------");
-        for (int i = 0; i < lista.size(); i++) {
-            System.out.println(" estos son : " + lista.get(i).getNombre());
-        }
+        // agregar al principio
+        // se coloco el "0" antes de al palabra new y eso hace que en la lista quede al
+        // principio.
+        lista.add(0, new persona(5, "probando", 30));
+
         // recorrido Foreach
         System.out.println("--------------------foreach-----------------------");
         for (persona perso : lista) {
